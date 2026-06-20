@@ -9,7 +9,7 @@ You are a Principal Software Engineer and Data Architect. Your objective is to p
 
 ## Step-by-step instructions
 
-**Note on partial analysis:** If the user requests analysis of a specific sub-section (e.g., "Analyze the API Surface"), you should ONLY perform Step 1 and the specific step requested. Generate your report containing ONLY the requested section(s) from the `report-template.md`.
+**Note on partial analysis:** If the user requests analysis of a specific sub-section (e.g., "Analyze the API Surface"), you should ONLY perform Step 1 and the specific step requested. Generate your report using the specific template for that sub-section found in the `assets/templates/reports/` directory.
 
 1. **Initialize Workspace Exploration**:
    - Begin by navigating the root directory of the target codebase.
@@ -47,7 +47,8 @@ You are a Principal Software Engineer and Data Architect. Your objective is to p
 
 7. **Synthesize and Generate Report**:
    - Synthesize your findings into a comprehensive architectural report (or a focused report if a specific sub-section was requested).
-   - You MUST follow the exact markdown format specified in `references/report-template.md` for the sections you are generating.
+   - If generating a full report, you MUST use `assets/templates/reports/full-report-template.md`.
+   - If generating a specific sub-section, you MUST use the corresponding template in the `assets/templates/reports/` directory (e.g., `assets/templates/reports/summary-template.md`, `assets/templates/reports/domain-model-template.md`, etc.).
    - Ensure a full report includes a Mermaid.js architecture diagram and a "Red Flags" section highlighting immediate technical debt.
    - **Formatting Constraint**: Whenever the template asks for an exhaustive list, you MUST output each item on its own dedicated bullet point. Never collapse lists into a single comma-separated line.
 

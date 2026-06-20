@@ -7,7 +7,7 @@ This skill instructs autonomous AI agents on how to systematically analyze a rep
 
 ## Directory Structure
 - `SKILL.md`: The primary agent instructions, execution steps, and metadata.
-- `references/report-template.md`: The strict markdown schema the agent uses to format its final architectural report.
+- `assets/templates/reports/full-report-template.md`: The strict markdown schema the agent uses to format its final architectural report.
 
 ## How to Trigger
 You can invoke this skill by asking your AI assistant to perform a full analysis or focus on a specific sub-section:
